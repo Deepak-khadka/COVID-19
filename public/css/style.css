@@ -1,0 +1,624 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* REGISTER CSS*/
+.container-section{
+    background: url(../images/register.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.body_wrapper{
+    padding: 50px;
+}
+.set-mx{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.reg{
+    color: white;
+    margin-bottom: 12px;
+}
+.register_form{
+    background: #fff;
+    padding: 40px 40px 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+    box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+}
+.text-control{
+    width: 314px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #d8d4d4;
+    font: normal 12px arial;
+}
+.check-box{
+    position: relative;
+    margin-left:100px;
+    color: #616365;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.check-box input{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 4px;
+}
+.btn-block{
+    width: 100%;
+    display: block;
+}
+.text-in{
+    margin-bottom: 20px;
+}
+
+/* LOGIN CSS*/
+
+.container-body{
+    background: url(../../images/login.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.form-group label{
+    font: normal 13px arial;
+}
+
+
+/* INDEX CSS*/
+.sidebar{
+    width: 18%;
+    height: 700px;
+    color: white;
+    float: left;
+    background: rgb(10, 10, 121);
+    min-height: calc(100vh - 63px);
+    position: fixed;
+}
+.logo-section{
+    height: 63px;
+    background: rgb(3, 3, 119) !important;
+    box-shadow: 0 4px 16px 0 rgba(26, 26, 27, 0.33);
+    padding: 10px 0px 0px 0px;
+}
+.logo-section span{
+    font: normal 31px arial;
+}
+.main-body{
+    width: 82%;
+    float: right;
+    background: #F3F3F3;
+}
+.top-header{
+    height: 63px;
+    box-shadow: 0 4px 16px 0 rgba(26, 26, 27, 0.33)!important ;
+    background: white !important;
+}
+.search-people{
+    width: 400px;
+    padding: 15px 0px 0px 53px;
+    float: left;
+}
+.search-people input{
+    border: none;
+}
+.form-control{
+    display: inline-block;
+    border: 1px solid #dee2e6 !important;
+    font-family: "roboto", sans-serif;
+    font-size: 0.75rem;
+    color: #212529;
+    padding: 0 .75rem;
+    line-height: 14px;
+    font-weight: 300;
+}
+.profile-img {
+    float: right;
+    width:120px;
+    margin-right: 200px;
+    padding: 11px;
+}
+.profile-img ul li{
+    display: inline-block;
+    width: 35px;
+}
+.icons img{
+    width:18px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    border-bottom: 1px solid #02026b;
+    padding: 16px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.menu ul li:hover{
+    background: rgb(4, 4, 131);
+}
+.menulist{
+    margin-top: 20px;
+}
+.active{
+    background: rgb(4, 4, 131);
+}
+
+.main-panel {
+    -webkit-transition: width 0.25s ease, margin 0.25s ease;
+    transition: width 0.25s ease, margin 0.25s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+  .content-wrapper {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.data-section{
+    width: 1000px;
+    height: 100px;
+    background: white;
+    margin-top: 44px;
+    margin-left: 57px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    border: solid 1px #dde4eb;
+}
+.data-section ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.data-section ul li {
+    display: inline-block;
+    width: 300px;
+}
+.data-section h3{
+    font: normal 25px arial;
+}
+.data-section span{
+    font: normal 20px arial;
+}
+.definition{
+    padding: 27px 0px 0px 57px;
+    text-align: justify;
+    width:1065px;
+}
+.definition h2{
+    font: normal 25px arial;
+}
+.blocks{
+    width: 1000px;
+    margin: 40px 0px 0px 57px;
+}
+.symptoms-section{
+    width: 567px;
+    float: left;
+    background: white;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+.symptoms-section label{
+    font: normal 25px arial;
+}
+.prevention{
+    width: 420px;
+    float: right;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+.prevention label{
+    font: normal 25px arial;
+}
+.prevention ul{
+    margin-left: 20px;
+}
+.symptoms-list ul{
+    list-style: none;
+}
+.symptoms-list ul li{
+    display: inline-block;
+    width: 170px;
+    font: oblique 12px arial;
+    margin-bottom: 40px;
+}
+.symptoms-list img{
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+}
+.footer
+ {
+    width: 1106px;
+    margin-top: 50px;
+    background: #dbdbdb;
+    padding: 20px 1rem;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    border-top: 1px solid #cdd6dc;
+    font-size: calc(0.875rem - 0.05rem);
+    font-family: "roboto", sans-serif; }
+    .footer a {
+      font-size: inherit;
+     }
+.pictures{
+    width: 1000px;
+    background: white;
+    margin: 70px 30px 16px 59px;
+    padding: 20px;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+
+.image{
+    margin-top: 20px;
+    margin-bottom:50px ;
+}
+.image img{
+    width: 100%;
+}
+.pictures span{
+    font: normal 20px arial;
+}
+
+/*Chat CSS*/
+.chat-top{
+    border-bottom: 1px solid rgb(236, 234, 234);
+    padding: 10px;
+}
+.chat-box{
+    width: 100%;
+    margin-left: 51px;
+    margin-top: 50px;
+}
+.message-box{
+    width: 640px;
+    background: white;
+    float: left;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+.chatbar{
+    height: 50px;
+}
+.message-section{
+    height: 600px;
+    padding: 10px;
+}
+.message-with img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.chatbar a{
+    text-decoration: none;
+    font: normal 16px arial;
+    color: black;
+}
+
+.message-with{
+    float: left;
+}
+.delete img{
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 15px 10px 0px 0px;
+}
+
+.message-section img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.conversation-receive {
+    float: left;
+    margin-top: 30px;
+}
+.conversation-send{
+    float: right;
+    margin-top: 30px;
+}
+.conversation-box1{
+    background-color: rgb(226, 224, 224);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: justify;
+    float: right;
+    margin-left: 10px;
+}
+.conversation-box2{
+    background-color: rgb(52, 118, 241);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: justify;
+    float: right;
+    margin-left: 10px;
+    color: white;
+}
+.online-list{
+    width: 346px;
+    background: white;
+    float: right;
+    position: relative;
+    left: 35px;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+.mess-search{
+    border-bottom: 1px solid #dcd9d9;
+    padding:10px;
+}
+.people-list {
+    padding: 12px;
+    border-bottom: 1px solid #dcd9d9;
+}
+.people-list ul{
+    list-style: none;
+    display: inline-block;
+}
+.people-list ul li{
+    display: inline-block;
+    width: 50px;
+}
+.people-list img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.active-line{
+    width: 10px;
+    height: 10px;
+    background: rgb(3, 170, 39);
+    border-radius: 100%;
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    border: 2px solid white;
+}
+.conversation{
+    color:black;
+    font-size: 1.3rem;
+    padding: 20px 20px 20px 15px;
+    grid-template-columns: 40px 1fr max-content;
+    grid-gap: 10px;
+    border-bottom: 1px solid beige;
+}
+.conversation:nth-child(n+1){
+    border-bottom: none;
+}
+.conversation-mess{
+    width: 258px;
+    float: right
+}
+.conversation:hover{
+    cursor: pointer;
+    background: #f0f0f0;
+}
+.conversation img{
+    height: 40px;
+    border-radius: 100%;
+    grid-row: span 2;
+    margin-top: 15px;
+}
+.text-title{
+    font-weight:bold;
+    font-size: 15px;
+}
+.created-date{
+    font-size: 12px;
+}
+.conversation-message{
+    font-size: 18px;
+}
+.chat-form{
+    height: 65px;
+    background: #e9ecef;
+    padding: 5px;
+}
+.chat-form input{
+    border-radius: 5px;
+    width: 530px;
+    padding: 7px;
+    border: none;
+    margin: 7px 21px 0px 25px;
+    box-shadow: 1px 0px 2px 1px #d2d2ce9e;
+}
+.form-input{
+    float: left;
+
+}
+.send button{
+   background: none;
+   border: none;
+   margin-top: 9px;
+}
+.send img{
+    width: 35px;
+    height: 35px;
+}
+
+/* Suitation reports*/
+.cases{
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.active-cases{
+    width: 400px;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    border-radius: 15px;
+    float: left;
+}
+.active-cases p{
+    font-size: 12px;
+}
+.title{
+    height: 57px;
+    background:rgb(3, 3, 119);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.current{
+    margin-top: 30px;
+}
+.current h2{
+    font: bolder 43px arial;
+}
+.condition{
+    padding: 25px;
+}
+.mild{
+    float: left;
+    width: 224px;
+}
+.mild h2{
+    color: rgb(8, 10, 170);
+}
+.serious h2{
+    color: red;
+}
+.closed-cases{
+    margin-left: 55px;
+    width: 400px;
+    background: white;
+    margin-top: 20px;
+    box-shadow:  0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    border-radius: 15px;
+    float: right;
+}
+.closed-cases p{
+    font-size: 12px;
+}
+.nepal-case{
+    width: 835px;
+    height: 170px;
+    background: white;
+    box-shadow: 0px 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+.nepal-case ul{
+    list-style: none;
+}
+.nepal-case ul li{
+    display: inline-block;
+    width: 260px;
+    margin-top: 20px;
+}
+.nepal-case h3{
+    font: normal 20px arial;
+}
+.nepal-case span{
+    font: bold 20px arial;
+}
+.reports-list{
+    margin-top: 25px;
+    position: relative;
+    left: 62px;
+    padding: 30px;
+}
+.reports-list img{
+    width: 200px;
+    height: 150px;
+}
+.new-box{
+    margin-top: 30px;
+    border: 1px solid rgb(230, 228, 228);
+    padding: 25px;
+}
+.update-list{
+    width: 1000px;
+    background: white;
+    margin-left: 90px;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 0px 4px 16px 0 rgba(167, 175, 183, 0.33);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HELPLINE CSS*/
+.list-section{
+    width: 1000px;
+    height: 130px;
+    background: #02026b;
+    margin-top: 44px;
+    margin-left: 57px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11), 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    color: white;
+    padding: 10px;
+}
+
+.center-list ul{
+    list-style: none;
+}
+.hospital{
+    width: 100%;
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.hospital span{
+    font: bold 20px arial;
+}
+.center-list a{
+    color: red;
+    text-decoration: none;
+    font: normal 18px arial;
+}
+.lab ul{
+    margin-top: 20px;
+}
+.lab span{
+    font: normal 20px arial;
+}
