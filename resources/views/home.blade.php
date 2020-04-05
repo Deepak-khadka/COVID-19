@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master.master6')
 @section('title')
       Home
     @endsection
@@ -8,7 +8,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Access The Route</div>
-
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
