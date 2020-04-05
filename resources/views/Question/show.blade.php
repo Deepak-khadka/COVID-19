@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master.master')
 
 @section('title')
      {{$question->slug}}
