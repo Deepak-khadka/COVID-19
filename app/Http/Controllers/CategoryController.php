@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -13,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+       $category =  Category::get();
+      return view('category.index',['category'=>$category]);
     }
 
     /**
@@ -45,7 +47,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+       $category = Category::where('slug',$id)->first();
+       return view('category.show',['category'=>$category]);
     }
 
     /**
@@ -56,7 +59,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+       $category = Category::where('slug',$id)->first();
+       return view('category.edit',['category'=>$category]);
     }
 
     /**
@@ -79,6 +83,11 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $category = Category::where('slug',$id)->first();
+      if($category->delete()){
+          return redirect('category')->with('success','Delete success');
+      }else{
+          return redirect()->back()->with('error','Unable to Delete');
+      }
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\QuestionValidation;
 use App\Model\Category;
 use App\Model\Question;
+use App\Model\Reply;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -73,10 +74,11 @@ class QuestionController extends Controller
      */
     public function show($question)
     {
-
+        $category = Category::all();
        $show_question = Question::where('slug',$question)->first();
-
-       return view('Question.show',['question'=>$show_question]);
+       $replies = Reply::where('question_id',$show_question->id)->latest()->get();
+       $count = $replies->count();
+       return view('Question.show',['question'=>$show_question,'replies'=>$replies,'count'=>$count,'category'=>$category]);
     }
 
     /**
@@ -87,6 +89,7 @@ class QuestionController extends Controller
      */
     public function edit($id)
     {
+
        $edit_question = Question::where('slug',$id)->first();
         if($edit_question->user_id==auth()->user()->id) {
             $category = Category::all();
@@ -112,7 +115,7 @@ class QuestionController extends Controller
         ]);
         if($update_question){
 
-            return redirect('/question')->with('success','EDIT SUCCESSFUL');
+            return redirect()->back()->with('success','EDIT SUCCESSFUL');
         }else{
             return redirect()->back()->withInput()->with('error','SOMETHING GOES WRONG');
         }

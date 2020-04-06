@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="icon" href="../images/ceelina.jpg ">
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -22,7 +22,7 @@
             <div class="menulist ">
                 <ul>
                     <li class=" <?php  if(url()->current() == url('')){echo "active";}?>"><a href="/home" >Home</a></li>
-                    <li class=" <?php  if(url()->current() == url('/message')){echo "active";}?>"  ><a href="/message/t">Messages</a></li>
+                    <li class=" <?php  if(url()->current() == url('/question')){echo "active";}?>"  ><a href="/question">Questions</a></li>
                     <li class=" <?php  if(url()->current() == url('/suitation')){echo "active";}?>"><a href="/suitation">Suitation Reports</a></li>
                     <li class=" <?php  if(url()->current()==  url('/helpline')){echo "active";}?>"><a href="/helpline">Helpline</a></li>
 
@@ -83,6 +83,23 @@
                 </div>
             </div>
         </nav>
+
+    </div>
+
+    <div class="container" style="margin-top: 10px">
+        @if (session()->has('error'))
+            <div class="alert alert-danger">
+                {!! session()->get('error') !!}
+
+            </div>
+
+        @endif
+        @if (session()->has('success'))
+            <div class="alert alert-success">
+                {!! session()->get('success') !!}
+
+            </div>
+        @endif
 
     </div>
    @yield('content')

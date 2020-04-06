@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ReplyValidation;
+use App\Model\Reply;
+use App\User;
 use Illuminate\Http\Request;
 
 class ReplyController extends Controller
@@ -32,9 +35,20 @@ class ReplyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ReplyValidation $request)
     {
-        //
+               $reply = Reply::create([
+                   'body'=>$request->input('body'),
+                   'question_id'=>$request->input('question_id'),
+                   'user_id'=>auth()->user()->id,
+               ]);
+               if($reply)
+               {
+                   return redirect()->back()->with('success','Reply Success');
+               }
+               else{
+                   return redirect()->back()->withInput()->with('error','Unable to Comment');
+               }
     }
 
     /**
@@ -56,7 +70,8 @@ class ReplyController extends Controller
      */
     public function edit($id)
     {
-        //
+        $reply = Reply::find($id)->first();
+        return view('Reply.edit',['reply'=>$reply]);
     }
 
     /**

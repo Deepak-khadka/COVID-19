@@ -33,7 +33,9 @@ Route::get('/form',function ()
 
 Auth::routes();
 Route::resources([
-    'question'=>'QuestionController'
+    'question'=>'QuestionController',
+    'category'=>'CategoryController',
+    'reply'=>'ReplyController',
 ]);
 
 Route::get('/home', 'HomeController@index')->name('home');

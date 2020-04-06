@@ -1,4 +1,4 @@
-@extends('master.master6')
+@extends('master.master')
 @section('title')
       Home
     @endsection

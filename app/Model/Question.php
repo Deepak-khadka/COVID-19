@@ -9,9 +9,10 @@ class Question extends Model
 {
     protected $table = 'questions';
 
-//    protected $fillable = ['title', 'slug', 'body', 'category_id', 'user_id'];
+   protected $fillable = ['title', 'slug', 'body', 'category_id', 'user_id'];
 
-     protected $guarded = [];
+   protected $with = ['replies'];
+    // protected $guarded = [];
 
     public function getRouteKeyName()
     {

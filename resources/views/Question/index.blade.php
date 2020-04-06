@@ -6,7 +6,7 @@
 <div class="container">
     <a href="{{route('question.create')}}" class="btn btn-secondary">Ask Question</a>
 
-     <div class="row">
+     <div class="row" style="margin-top: 10px">
 
 <div class="col-md-8">
 
