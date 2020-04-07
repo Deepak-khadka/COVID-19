@@ -18,9 +18,12 @@ class QuestionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
+    function __construct()
     {
-        return $this->middleware('auth');
+        $this->middleware('permission:question-list|question-create|question-edit|question-delete', ['only' => ['index','show']]);
+        $this->middleware('permission:question-create', ['only' => ['create','store']]);
+        $this->middleware('permission:question-edit', ['only' => ['edit','update']]);
+        $this->middleware('permission:question-delete', ['only' => ['destroy']]);
     }
 
     public function index()

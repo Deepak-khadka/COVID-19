@@ -22,7 +22,7 @@
         <div class="menu">
             <div class="menulist ">
                 <ul>
-                    <li class=" <?php  if(url()->current() == url('')){echo "active";}?>"><a href="/home" >Home</a></li>
+                    <li class=" <?php  if(url()->current() == url('')){echo "active";}?>"><a href="/" >Home</a></li>
                     <li class=" <?php  if(url()->current() == url('/question')){echo "active";}?>"  ><a href="/question">Questions</a></li>
                     <li class=" <?php  if(url()->current() == url('/suitation')){echo "active";}?>"><a href="/suitation">Suitation Reports</a></li>
                     <li class=" <?php  if(url()->current()==  url('/helpline')){echo "active";}?>"><a href="/helpline">Helpline</a></li>

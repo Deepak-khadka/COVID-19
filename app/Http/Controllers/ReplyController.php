@@ -14,6 +14,13 @@ class ReplyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+function __construct()
+{
+$this->middleware('permission:reply-list|reply-create|reply-edit|reply-delete', ['only' => ['index','show']]);
+$this->middleware('permission:reply-create', ['only' => ['create','store']]);
+$this->middleware('permission:reply-edit', ['only' => ['edit','update']]);
+$this->middleware('permission:reply-delete', ['only' => ['destroy']]);
+}
     public function index()
     {
         //

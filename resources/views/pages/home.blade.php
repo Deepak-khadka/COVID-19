@@ -100,19 +100,19 @@
                 <div class="pictures text-center">
                     <span>Sitution in Nepal in Pictures</span>
                     <div class="image">
-                        <img src="../images/pic6.jpg" alt="">
+                        <img src="../images/hospita.jpeg" alt="">
                         <p>Hospital Staffs in Safety Suits</p>
                     </div>
                     <div class="image">
-                        <img src="../images/pic5.jpg" alt="">
+                        <img src="../images/desk.jpg" alt="">
                         <p>Staffs at Tribhuwan International Airport</p>
                     </div>
                     <div class="image">
-                        <img src="../images/pic2.jpg" alt="">
+                        <img src="../images/karona.jpg" alt="">
                         <p>Hospital Staff being prepared for the battel</p>
                     </div>
                     <div class="image">
-                        <img src="../images/pic4.jpg" alt="">
+                        <img src="../images/min.jpg" alt="">
                         <p>Ministry of Health and Population in Public </p>
                     </div>
                 </div>
