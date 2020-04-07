@@ -39,4 +39,5 @@ Route::resources([
 ]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/getLikes', 'LikeController@index')->name('like');
 

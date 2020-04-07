@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Like;
 use Illuminate\Http\Request;
+use function Sodium\increment;
 
 class LikeController extends Controller
 {
@@ -13,8 +15,12 @@ class LikeController extends Controller
      */
     public function index()
     {
-        //
+        $likes = Like::all();
+        return response()->json(array('data'=>false,'data'=>$likes),200);
     }
+
+
+
 
     /**
      * Show the form for creating a new resource.

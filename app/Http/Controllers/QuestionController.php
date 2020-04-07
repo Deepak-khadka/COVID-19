@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\QuestionValidation;
 use App\Model\Category;
+use App\Model\Like;
 use App\Model\Question;
 use App\Model\Reply;
 use App\User;
@@ -74,10 +75,12 @@ class QuestionController extends Controller
      */
     public function show($question)
     {
+
         $category = Category::all();
        $show_question = Question::where('slug',$question)->first();
        $replies = Reply::where('question_id',$show_question->id)->latest()->get();
        $count = $replies->count();
+
        return view('Question.show',['question'=>$show_question,'replies'=>$replies,'count'=>$count,'category'=>$category]);
     }
 

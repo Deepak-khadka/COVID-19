@@ -83,7 +83,19 @@ class ReplyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $reply = Reply::where('id',$id)->update([
+            'body'=>$request->input('body'),
+            'question_id'=>$request->input('question_id'),
+            'user_id'=>auth()->user()->id,
+        ]);
+        if($reply)
+        {
+            return redirect()->back()->with('success','Edit Success');
+        }
+        else{
+            return redirect()->back()->withInput()->with('error','Unable to Edit');
+        }
     }
 
     /**
@@ -94,6 +106,11 @@ class ReplyController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $reply = Reply::find($id)->delete();
+      if($reply){
+          return redirect()->back()->with('success','Deleted');
+      }else{
+          return redirect()->back()->with('error','Unable to Delete');
+      }
     }
 }
